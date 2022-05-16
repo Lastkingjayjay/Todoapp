@@ -1,0 +1,48 @@
+#container {
+  display: flex;
+}
+
+center {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  flex-grow: 3;
+  align-items: center;
+}
+#items {
+  display: flex;
+  width: 100%;
+}
+#left {
+  order: 0;
+  flex-grow: 2;
+}
+
+#right {
+  order: 2;
+  flex-grow: 2;
+}
+
+/* this will add a stirke thgrouhg the text */
+
+.strike .text {
+  text-decoration: line-through;
+  color: wheat;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+#items ul {
+  list-style-type: none;
+  width: 100%;
+  padding: none;
+}
+
+#items ul li {
+  background-color: rgb(231, 152, 231);
+  margin-top: 0.2em;
+  display: flex;
+  justify-content: space-between;
+}
