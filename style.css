@@ -46,3 +46,15 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
+#items ul li:nth-child(add) {
+  background-color: orange;
+}
+#items ul li:hover {
+  background-color: rgb(67, 14, 167);
+  color: white;
+}
+
+.strike {
+  background-color: tomato !important;
+}
