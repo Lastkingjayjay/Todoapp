@@ -2,17 +2,19 @@
   display: flex;
 }
 
-center {
+#center {
   display: flex;
   flex-direction: column;
   order: 1;
   flex-grow: 3;
   align-items: center;
 }
+
 #items {
   display: flex;
   width: 100%;
 }
+
 #left {
   order: 0;
   flex-grow: 2;
@@ -23,12 +25,12 @@ center {
   flex-grow: 2;
 }
 
-/* this will add a stirke thgrouhg the text */
-
+/* This will add a strike through through the text of the items in the todo list */
 .strike .text {
   text-decoration: line-through;
   color: wheat;
 }
+
 a {
   text-decoration: none;
   color: unset;
@@ -37,7 +39,8 @@ a {
 #items ul {
   list-style-type: none;
   width: 100%;
-  padding: none;
+  /* justify-content: left; */
+  padding: 1em;
 }
 
 #items ul li {
@@ -47,9 +50,10 @@ a {
   justify-content: space-between;
 }
 
-#items ul li:nth-child(add) {
+#items ul li:nth-child(odd) {
   background-color: orange;
 }
+
 #items ul li:hover {
   background-color: rgb(67, 14, 167);
   color: white;
